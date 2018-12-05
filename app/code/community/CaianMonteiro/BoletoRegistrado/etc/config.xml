@@ -7,30 +7,53 @@
     </modules>
     <global>
         <models>
-            <caianmonteiro_boletoregistrado>
+            <boletoregistrado>
                 <class>CaianMonteiro_BoletoRegistrado_Model</class>
                 <resourceModel>caianmonteiro_boletoregistrado_resource</resourceModel>
-            </caianmonteiro_boletoregistrado>
-            <caianmonteiro_boletoregistrado_resource>
+            </boletoregistrado>
+            <boletoregistrado_resource>
                 <class>CaianMonteiro_BoletoRegistrado_Model_Resource</class>
-            </caianmonteiro_boletoregistrado_resource>
+            </boletoregistrado_resource>
         </models>
         <blocks>
-            <caianmonteiro_boletoregistrado>
+            <boletoregistrado>
                 <class>CaianMonteiro_BoletoRegistrado_Block</class>
-            </caianmonteiro_boletoregistrado>
+            </boletoregistrado>
         </blocks>
         <helpers>
-            <caianmonteiro_boletoregistrado>
+            <boletoregistrado>
                 <class>CaianMonteiro_BoletoRegistrado_Helper</class>
-            </caianmonteiro_boletoregistrado>
+            </boletoregistrado>
         </helpers>
         <resources>
-            <caianmonteiro_boletoregistrado_setup>
+            <boletoregistrado_setup>
                 <setup>
                     <module>CaianMonteiro_BoletoRegistrado</module>
                 </setup>
-            </caianmonteiro_boletoregistrado_setup>
+            </boletoregistrado_setup>
         </resources>
     </global>
+    <default>
+        <payment>
+            <boletoregistrado>
+                <active>1</active>
+                <model>boletoregistrado/paymentmethod</model>
+                <order_status>pending</order_status>
+                <title>Boleto Bancário Registrado</title>
+                <allowspecific>0</allowspecific>
+                <payment_action>sale</payment_action>
+            </boletoregistrado>
+        </payment>
+    </default>
+    <frontend>
+        <routers>
+            <boletoregistrado>
+                <use>standard</use>
+                <args>
+                    <module>CaianMonteiro_BoletoRegistrado</module>
+                    <frontName>boletoregistrado</frontName>
+                </args>
+            </boletoregistrado>
+        </routers>
+    </frontend>
 </config>
