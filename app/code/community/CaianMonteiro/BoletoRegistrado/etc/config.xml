@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CaianMonteiro_BoletoRegistrado>
+            <version>0.1.0</version>
+        </CaianMonteiro_BoletoRegistrado>
+    </modules>
+    <global>
+        <models>
+            <caianmonteiro_boletoregistrado>
+                <class>CaianMonteiro_BoletoRegistrado_Model</class>
+                <resourceModel>caianmonteiro_boletoregistrado_resource</resourceModel>
+            </caianmonteiro_boletoregistrado>
+            <caianmonteiro_boletoregistrado_resource>
+                <class>CaianMonteiro_BoletoRegistrado_Model_Resource</class>
+            </caianmonteiro_boletoregistrado_resource>
+        </models>
+        <blocks>
+            <caianmonteiro_boletoregistrado>
+                <class>CaianMonteiro_BoletoRegistrado_Block</class>
+            </caianmonteiro_boletoregistrado>
+        </blocks>
+        <helpers>
+            <caianmonteiro_boletoregistrado>
+                <class>CaianMonteiro_BoletoRegistrado_Helper</class>
+            </caianmonteiro_boletoregistrado>
+        </helpers>
+        <resources>
+            <caianmonteiro_boletoregistrado_setup>
+                <setup>
+                    <module>CaianMonteiro_BoletoRegistrado</module>
+                </setup>
+            </caianmonteiro_boletoregistrado_setup>
+        </resources>
+    </global>
+</config>
