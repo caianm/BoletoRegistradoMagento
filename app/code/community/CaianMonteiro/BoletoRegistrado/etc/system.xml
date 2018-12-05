@@ -3,23 +3,23 @@
     <sections>
         <payment>
             <groups>
-                <boletoregistrado>
+                <boletoregistrado translate="label" module="boletoregistrado">
                     <label>Boleto Bancário Registrado</label>
-                    <sort_order>1000</sort_order>
+                    <sort_order>500</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active>
+                        <active translate="label">
                             <label>Habilitado</label>
-                            <frontend_type>text</frontend_type>
+                            <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <sort_order>10</sort_order>
                         </active>
-                        <title>
+                        <title translate="label">
                             <label>Título</label>
                             <frontend_type>text</frontend_type>
                             <show_in_default>1</show_in_default>
@@ -27,9 +27,9 @@
                             <show_in_store>1</show_in_store>
                             <sort_order>20</sort_order>
                         </title>
-                        <mode>
+                        <mode translate="label">
                             <label>Modo</label>
-                            <frontend_type>text</frontend_type>
+                            <frontend_type>select</frontend_type>
                             <source_model>boletoregistrado/system_config_source_modo</source_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -45,7 +45,7 @@
                             <show_in_store>1</show_in_store>
                             <sort_order>40</sort_order>
                         </order_status>
-                        <api_token>
+                        <api_token translate="label">
                             <label>Token API</label>
                             <frontend_type>text</frontend_type>
                             <show_in_default>1</show_in_default>

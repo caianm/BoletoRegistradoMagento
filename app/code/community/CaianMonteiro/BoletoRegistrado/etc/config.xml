@@ -9,7 +9,7 @@
         <models>
             <boletoregistrado>
                 <class>CaianMonteiro_BoletoRegistrado_Model</class>
-                <resourceModel>caianmonteiro_boletoregistrado_resource</resourceModel>
+                <resourceModel>boletoregistrado_resource</resourceModel>
             </boletoregistrado>
             <boletoregistrado_resource>
                 <class>CaianMonteiro_BoletoRegistrado_Model_Resource</class>
@@ -36,11 +36,10 @@
     <default>
         <payment>
             <boletoregistrado>
-                <active>1</active>
+                <active>0</active>
                 <model>boletoregistrado/paymentmethod</model>
                 <order_status>pending</order_status>
                 <title>Boleto Bancário Registrado</title>
-                <allowspecific>0</allowspecific>
                 <payment_action>sale</payment_action>
             </boletoregistrado>
         </payment>

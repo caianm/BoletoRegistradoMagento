@@ -4,6 +4,10 @@
         <CaianMonteiro_BoletoRegistrado>
             <active>true</active>
             <codePool>community</codePool>
+
+            <depends>
+                <Mage_Payment/>
+            </depends>
         </CaianMonteiro_BoletoRegistrado>
     </modules>
 </config>
